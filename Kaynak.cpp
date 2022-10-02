@@ -3,15 +3,13 @@ using namespace std;
 
 int main()
 {
+	int toplam = 0;
 	int number;
-	cout << "Enter Number:";
-	cin >> number;
-	if (number % 2 == 0)
+	for (int i = 1; i <= 10; i++)
 	{
-		cout << "Number is Even.";
+		cout << i << "Enter Number:";
+		cin >> number;
+		toplam = toplam + number;
 	}
-	else
-	{
-		cout << "Number is Odd";
+	cout << "Avarge of 5 number:" << toplam / 10;
 	}
-}
